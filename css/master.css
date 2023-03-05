@@ -1,0 +1,125 @@
+/*Importando el tipo de fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+/*-----Utilizando el selector universal -----*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----CSS de seteo global -----*/
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*--------- CSS Encabezado ----------*/
+.encabezado {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(52, 52, 52, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.opcionesMenu {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+/*-- -- Selector descendiente*/
+
+nav.menu ul.opcionesMenu li a {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+/*---Trabjando con el :HOVER --- */
+nav.menu ul.opcionesMenu li a:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.menu {
+    width: 70%;
+    
+
+}
+
+#logo {
+    width: 10%;
+}
+
+/*--------- CSS de la sección del Fondo ----------*/
+
+.fondo {
+    background-image: url('../img/banner1.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*-----CSS del titulo -----*/
+.titulo {
+
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+
+}
+
+/*------CSS a la sección MAIN ------*/
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*------Aplicado CSS a la imagen de nueva película ------*/
+
+.imagenNuevo {
+    position: relative;
+}
+
+.nuevo {
+    position: absolute;
+    top: 10px;
+    width: 4.5rem;
+     
+
+}
+
+.pelicula {
+    width: 18%;
+    background-color: #75a2a8;
+    border: 1px solid black;
+    border-radius: 0px 0px 50px 0px;
+    margin: 8px;
+}
+
+footer {
+    display: flex;
+    background-color: #141A32;
+    height: 130px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+}
